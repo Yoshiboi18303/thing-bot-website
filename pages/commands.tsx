@@ -190,7 +190,7 @@ export default function CommandsPage() {
                   {cmd.args.map((arg, idx) => {
                     if (idx > cmd.args.length || idx < 0)
                       return (
-                        <TableCell key={idx} align="right">
+                        <TableCell key={arg.name} align="right">
                           Invalid Arg
                         </TableCell>
                       );
@@ -200,7 +200,7 @@ export default function CommandsPage() {
                       return (
                         <>
                           <TableCell
-                            key={idx}
+                            key={arg.name}
                             align="right"
                           >{`<${arg.name}>`}</TableCell>
                         </>
@@ -209,7 +209,7 @@ export default function CommandsPage() {
                       return (
                         <>
                           <TableCell
-                            key={idx}
+                            key={arg.name}
                             align="right"
                           >{`[${arg.name}]`}</TableCell>
                         </>
@@ -218,7 +218,7 @@ export default function CommandsPage() {
                   {cmd.aliases?.map((alias, idx) => {
                     if (idx > cmd.aliases!.length || idx < 0)
                       return (
-                        <TableCell key={idx} align="right">
+                        <TableCell key={alias} align="right">
                           Invalid Alias
                         </TableCell>
                       );

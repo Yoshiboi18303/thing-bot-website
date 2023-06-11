@@ -10,7 +10,7 @@ export default function Home() {
         title="Thing Bot"
         description="A unique Discord economy bot, with a focus on cannibalism."
       />
-      <Box flex={0.3} mb={3}>
+      <Box flex={0.3} flexWrap="wrap" mb={3}>
         <PageLink href="/about">About</PageLink>
         <PageLink href="/commands">Commands</PageLink>
         <PageLink href="/features">Features</PageLink>

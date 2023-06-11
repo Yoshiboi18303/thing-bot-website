@@ -52,6 +52,7 @@ const features: IFeature[] = [
       <>
         This image only shows the coloring system, the others are part of the{" "}
         <code>toggle</code> command
+        <p style={{ fontSize: 8 }}>Website version coming soon.</p>
       </>
     ),
     biggerHeight: true,
@@ -60,11 +61,11 @@ const features: IFeature[] = [
 
 function Features() {
   return (
-    <>
+    <Box flex={0.4} flexWrap="wrap">
       {features.map((feature, idx) => (
         <Feature key={idx} {...feature} />
       ))}
-    </>
+    </Box>
   );
 }
 
